@@ -1,0 +1,46 @@
+ion-header{
+  ion-toolbar{
+    ion-label{
+      font-size: 1.8rem;
+      text-align: center;
+      text-transform:uppercase ;
+    }
+  }
+}
+
+ion-content{
+  display: flex;
+  justify-content:center;
+  
+
+  .cab{
+    margin-top:30px;
+    text-align: center;
+  }
+  .btn1{
+    margin-top: 70px;
+  }
+
+  .btn2{
+    margin-top: 25px;
+  }
+
+  .cadastro {
+    margin-top:30px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .sem-login{
+    margin-top:30px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .footer{
+    margin-top: 145px;
+    color: #fff;
+    background: #01A355;
+    padding:15px
+  }
+}

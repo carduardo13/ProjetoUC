@@ -1,0 +1,114 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-icon [routerLink]="['/home']" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-label color="success">Cadastro</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label position="floating">Nome Completo*</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Data de Nascimento: *</ion-label>
+    <ion-datetime displayFormat="DD MM YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-list>
+    <ion-radio-group value="sexo">
+      <ion-list-header>
+        <ion-label><strong>Você se identifica como: *</strong></ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Homem</ion-label>
+        <ion-radio slot="end" value="homem"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Mulher</ion-label>
+        <ion-radio slot="end" value="mulher"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Prefiro não informar</ion-label>
+        <ion-radio slot="end" value="nao"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Outro</ion-label>
+        <ion-radio slot="end" value="outro"></ion-radio>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"> Repita a Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+
+  <ion-list>
+    <ion-radio-group value="moedas">
+      <ion-list-header>
+        <ion-label><strong>Você se identifica como: *</strong></ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Dolar</ion-label>
+        <ion-radio slot="end" value="dolar"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Libra</ion-label>
+        <ion-radio slot="end" value="libra"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Peso</ion-label>
+        <ion-radio slot="end" value="peso"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Euro</ion-label>
+        <ion-radio slot="end" value="euro"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Bitcoin</ion-label>
+        <ion-radio slot="end" value="bitcoin"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Iene</ion-label>
+        <ion-radio slot="end" value="eene"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+
+  <div class="btn1">
+    <ion-button color="success" [routerLink]="['/termos']" expand="block">AVANÇAR</ion-button>
+  </div>
+
+
+
+</ion-content>

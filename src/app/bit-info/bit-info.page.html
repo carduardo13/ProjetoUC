@@ -1,0 +1,48 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon [routerLink]="['/perfil']" name="arrow-back"></ion-icon>
+    </ion-buttons>
+    <ion-label color="success">Cotação de {{this.ListBit.code}}</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{this.ListBit.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Compra {{this.ListBit.bid}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Venda {{this.ListBit.ask}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Variação {{this.ListBit.varBid}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label class="ion-text-wrap">Porcentagem de Variação: {{this.ListBit.varBid}}% </ion-label>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-label>Máximo {{this.ListBit.high}} </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Mínimo {{this.ListBit.low}} </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button shape="round" [routerLink]="['/home']" color="success" fill="outline">sair</ion-button>
+    </ion-buttons>
+    <ion-label color="success">Ʃ MoneyTilt</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Moedas Favoritas</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list>
+        <ion-item>
+          <ion-icon color="warning" slot="start" name="star"></ion-icon>
+          <ion-label>{{this.ListUsd.code}}</ion-label>
+          <ion-icon color="success" slot="end" [routerLink]="['/dolar-info']" name="alert-circle"></ion-icon>
+          <ion-icon color="success" slot="end" name="close-circle"></ion-icon>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon color="warning" slot="start" name="star"></ion-icon>
+          <ion-label>{{this.ListEuro.code}}</ion-label>
+          <ion-icon color="success" slot="end" [routerLink]="['/euro-info']" name="alert-circle"></ion-icon>
+          <ion-icon color="success" slot="end" name="close-circle"></ion-icon>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon color="warning" slot="start" name="star"></ion-icon>
+          <ion-label>{{this.ListBit.code}}</ion-label>
+          <ion-icon color="success" [routerLink]="['/bit-info']" slot="end" name="alert-circle"></ion-icon>
+          <ion-icon color="success" slot="end" name="close-circle"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-icon [routerLink]="['/home']" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-label color="success">Login</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="ion-padding">
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <div class="btn1">
+      <ion-button color="success" [routerLink]="['/perfil']" expand="block">ENTRAR</ion-button>
+    </div>
+
+    <div class="cadastro">
+      <ion-label>FAÇA SEU CADASTRO
+
+      </ion-label>
+    </div>
+
+    <div class="btn2">
+      <ion-button color="success" [routerLink]="['/cadastro']" expand="block">CADASTRAR</ion-button>
+    </div>
+
+
+
+  </div>
+
+
+
+</ion-content>

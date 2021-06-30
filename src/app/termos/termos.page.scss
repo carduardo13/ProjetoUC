@@ -1,0 +1,27 @@
+ion-header{
+    ion-toolbar{
+        ion-buttons{
+            ion-icon{
+                padding: 5px;
+                color: #01A355;
+                font-size: 1.3rem;
+            }
+        }
+      ion-label{
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform:uppercase ;
+      }
+    }
+  }
+
+  ion-content{
+      ion-card{
+          ion-card-content{
+              background:#F6F6F6;
+              ion-label{
+                  font-size:1rem
+              }
+          }
+      }
+  }
